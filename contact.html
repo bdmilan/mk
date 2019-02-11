@@ -9,16 +9,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<style>
         body {
-            background-color: #060e17;
-			
+            background-color: #fff;
+		
         }
-		.container{margin-top: 20px;
+		.container{background-color: #fff;
 		}
+		
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
         </style>
-    <title>Hello, world!</title>
+    <title>Hello, Guest!</title>
   </head>
   <body>
- 
+ <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <a class="navbar-brand" href="index.html">BDMilan</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,10 +45,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="tv.html">Live Tv <span class="sr-only">(current)</span> </a>
+        <a class="nav-link" href="tv.html">Live Tv</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,59 +61,54 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-	  <li class="nav-item active">
-        <a class="nav-link" href="contact.html">Contact Us</a>
+	  <li class="nav-item">
+        <a class="nav-link active" href="contact.html">Contact Us</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
 
+<h2 align="center">Contact Details</h2>
 
-<div class="modal fade" id="contact" role="dialog">
-    	<div class="modal-dialog">
-    		<div class="modal-content">
-    			<form class="form-horizontal" role="form">
-    				<div class="modal-header">
-    					<h4>Contact<h4>
-	    			</div>
-	    			<div class="modal-body">
-    					<div class="form-group">
-    						<label for="contact-name" class="col-sm-2 control-label">Name</label>
-    						<div class="col-sm-10">
-    							<input type="text" class="form-control" id="contact-name" placeholder="First & Last Name">
-    						</div>
-    					</div>
-    					<div class="form-group">
-    						<label for="contact-email" class="col-sm-2 control-label">Email</label>
-    						<div class="col-sm-10">
-    							<input type="email" class="form-control" id="contact-email" placeholder="example@domain.com">
-    						</div>
-    					</div>
-    					<div class="form-group">
-    						<label for="contact-message" class="col-sm-2 control-label">Message</label>
-    						<div class="col-sm-10">
-    							<textarea class="form-control" rows="4"></textarea>
-    						</div>
-    					</div>
-	    			</div>
-	    			<div class="modal-footer">
-    					<a class="btn btn-default" data-dismiss="modal">Close</a>
-    					<button type="submit" class="btn btn-primary">Send</button>
-    				</div>
-    			</form>
-    		</div>
-    	</div>
+<table style="style=width:100%; border: 1px solid black; margin-bottom: 5px;">
+  <tr>
+    <th width="33%">Name</th>
+    <th width="33%">Mobile No</th>
+    <th width="33%">E-mail</th>
+  </tr>
+  <tr>
+    <td>Admin</td>
+    <td>01705699262</td>
+    <td>bdmilan12@gmail.com</td>
+  </tr>
+</table>
+
+	 <!-- Footer -->
+<footer class="bg-dark">
+
+    <!-- Footer Elements -->
+    
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="text-center text-light py-3">© 2019 Copyright: <b> BDMilan</b>
+      
     </div>
+    <!-- Copyright -->
 
- 
+  </footer>
+  <!-- Footer -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	
+	</div>
   </body>
 </html>
